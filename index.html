@@ -1,0 +1,62 @@
+<!DOCTYPE html>         <!-- Beginning of HTML document -->    
+<html lang="en">            <!-- The language used is English Language -->
+
+<!-- Head element -->
+<head>
+    <meta charset="utf-8">
+
+    <!-- 50 character limit for Title -->
+    <title>DB Post 4</title> 
+
+    <!-- Link the external style sheet: index.css -->
+    <link href="index.css" rel="stylesheet" type="text/css" media="all"> 
+</head>
+<!-- End  head element -->
+
+<!-- Body element -->
+<body>
+    <!-- Header (Not the Head. It is different from the head.) -->
+    <header>
+        <h1>DB Post 4</h1>
+        <h1>Originally Created by John</h1>
+        <h1>Altered by Edward to Use Bubble Sort</h1>
+    </header>
+    <!-- End Header -->
+
+ <div class="container">
+     <h1>Enter an <u>even-sized</u> array of at <u>least 8 integers</u></h1>
+
+     <!-- This form is for users to input integers separated by commas-->
+     <form id="sortHalves">
+        <p>
+            <label for="userInput">Input numbers here separated by commas:</label>
+            <input type="text" name="userInput" id="userInput" autocomplete="off" required>
+            <button onclick="sortHalves" type="submit">Split and Sort</button>
+        </p>
+    </form>
+
+     <p>The integers you inputed will be split in half as they are listed. The first half will be sorted in ascending order 
+            and the second half will be sorted in descending order.
+     </p>
+     <p id="displayInput"></p>
+     <p id="displayFirstHalf"></p>
+     <p id="displaySecondHalf"></p>
+</div>
+    
+    <!-- Footer -->
+    <footer>
+        <p id="demo">
+            &copy; 2021&nbsp;
+            johnnyboy752
+            &nbsp;Designs.
+        </p>
+    </footer>
+     <!-- End Footer -->
+
+    <!-- Link the external JavaScript file: index.js -->
+    <script src="index.js"></script>
+
+</body>
+<!-- End the body element -->
+
+</html>
